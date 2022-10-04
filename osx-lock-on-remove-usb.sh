@@ -7,7 +7,7 @@ prev_state="unknown"
 state="unknown"
 
 function lock {
-  open -a /System/Library/Frameworks/ScreenSaver.framework/Versions/A/Resources/ScreenSaverEngine.app
+  osascript -e 'tell application "System Events" to keystroke "q" using {control down, command down}'
 }
 
 while true; do
